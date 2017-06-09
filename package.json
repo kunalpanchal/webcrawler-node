@@ -1,0 +1,27 @@
+{
+  "name": "webscrapper",
+  "version": "1.0.0",
+  "description": "A Webscrapper for shopping.com",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node-dev server"
+  },
+  "keywords": [
+    "scrapper",
+    "nodejs",
+    "shopping.com"
+  ],
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cheerio": "^1.0.0-rc.1",
+    "cors": "^2.8.3",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.3",
+    "node-dev": "^3.1.3",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1"
+  },
+  "author": "Kunal Panchal",
+  "license": "ISC"
+}
