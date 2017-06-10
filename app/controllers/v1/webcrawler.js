@@ -11,7 +11,8 @@ module.exports = {
         return response.ok(res, 'Welcome to API VERSION 1 webcrawler');
     },
 
-    getProductCount: (req, res) => {                           // http://www.shopping.com/products?KW=<keword>
+    // http://www.shopping.com/products?KW=<keword>
+    getProductCount: (req, res) => {
         let keyword = req.params.keyword;
         if (!keyword)
             return response.error(res, error.E_NO_PARAMS, 'No Keyword Sent');
@@ -20,8 +21,9 @@ module.exports = {
             .then(htmlString => response.ok(res, webCrawlerHelper.getProductCount(htmlString, keyword)))
             .catch(err => response.error(res, err));
     },
-
-    getProducts: (req, res) => {                         // http://www.shopping.com/products~PG-<number>?KW=<keyword>
+    
+    // http://www.shopping.com/products~PG-<number>?KW=<keyword>
+    getProducts: (req, res) => {
         let keyword = req.params.keyword;
         let pageNumber = req.params.page_number;
         if (!keyword)

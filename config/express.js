@@ -11,5 +11,4 @@ module.exports = function (app) {
     app.use(cors());
     app.use(parser.json({limit: '50mb'}));
     app.use(parser.urlencoded({ extended: false }));
-    console.log('App initiated');
 };

@@ -6,7 +6,7 @@ const webcrawler = require('./webcrawler');
 
 module.exports = function (passport) {
 
-    // // Add api version to the response
+    // Add api version to the response
     router.use(function (req, res, next) {
         res._json = res.json;
         res.json = function (obj) {

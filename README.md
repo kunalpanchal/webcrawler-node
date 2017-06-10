@@ -31,15 +31,6 @@ After you run, navigate to `http://localhost:3000` (You can change the port numb
 
 ## About the APIs
 
-### Following are the URLs that the project is to crawl:
-
-```
-`http://www.shopping.com/products?KW=<keword>`
-`http://www.shopping.com/products~PG-<number>?KW=<keyword>"`
-```
-
-### Using the api
-
 * Use this to get the total number of products available for a particular keyword:
 
     ```
@@ -72,6 +63,8 @@ OR if you have forever installed (npm install -g forever):
 forever start server.js
 ```
 
+You can alternatively use PM2 (highly recommended)
+
 ## NPMs Used (third party libraries)
 
 * body-parser: ^1.17.2,
@@ -87,7 +80,7 @@ forever start server.js
 
 * [NodeJS](https://nodejs.org/) - Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world.
 * [Express](https://expressjs.com/) - Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
-
+* [Cheerio](https://cheerio.js.org/) - Fast, flexible, and lean implementation of core jQuery designed specifically for the server.
 
 ## Authors
 
